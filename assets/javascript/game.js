@@ -19,11 +19,20 @@ var crystalFourVal = 0;
 var getRandom = function(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 };
-// assign variable to that  ^
 
 // Start game function
 function gameStart() {
+    // assign random number. 
     randNum = getRandom(19, 120);
     console.log(randNum)
-}
+    // assign each cryssle a number. 
+    crystalOneVal = getRandom(1, 12);
+    crystalTwoVal = getRandom(1, 12);
+    crystalThreeVal = getRandom(1, 12);
+    crystalFourVal = getRandom(1, 12);
+    console.log("cryssle 1: " + crystalOneVal + ", Cryssle 2: " + crystalTwoVal + ", cryssle 3: " + crystalThreeVal + ",  cryssle 4: " + crystalFourVal);
+    //set total number to 0 (possible act as a reset?)
+    totalNum = 0;
+    $("#randomNumber").text(randNum);
+};
 gameStart();

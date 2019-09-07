@@ -20,14 +20,14 @@ h1 {
     height: 100%;
 }
 
-.randomNumber {
+#randomNumber {
     display: block;
     background-color: blue;
      height: 100px;
     /* width: 200px; */ 
 }
 
-.winsLosses {
+#winsLosses {
     display: block;
     background-color: green;
     height: 100px;
