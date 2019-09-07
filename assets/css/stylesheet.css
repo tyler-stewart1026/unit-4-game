@@ -1,0 +1,46 @@
+body {
+    background-image: url("../images/background.jpg");
+}
+
+.container {
+    background-color: white;
+}
+
+h1 {
+    text-align: left;
+}
+
+/* .jumbotron {
+    background-color: 
+} */
+
+#crystals {
+    
+    width: 100%;
+    height: 100%;
+}
+
+.randomNumber {
+    display: block;
+    background-color: blue;
+     height: 100px;
+    /* width: 200px; */ 
+}
+
+.winsLosses {
+    display: block;
+    background-color: green;
+    height: 100px;
+}
+
+.usersNum {
+    display: block;
+    background-color: orange;
+    height: 100px;
+}
+
+.totalScore {
+    display: block;
+    background-color: yellow;
+    height: 100px;
+}

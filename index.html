@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <!-- meta tag stuff  -->
+    <meta charset="UTF-08">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS & Reset -->
+    <link href="assets/css/stylesheet.css" type="text/css" rel="stylesheet">
+    <link href="assets/css/reset.css" type="text/css" rel="stylesheet">
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--Javascript game -->
+    <script src="assets/javascript/game.js" type="text/javascript"></script>
+    <!-- JQuery CDN -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Sweet Alert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- Favicon -->
+    <link href="https://mirajewelers.com/wp-content/uploads/2016/11/diamond.png" rel="icon" type="image/x-icon" </head>
+        <title>
+    Gem Collector!
+    </title>
+
+<body>
+
+    <div class="jumbotron">
+        <div class="container">
+            <h1 class="display-4">Welcome to Gem Collector!</h1>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="rules">
+            <p>
+                Here you will be assigned a random number when the game starts.
+            </p>
+            <p>
+                Below are four crystals. Each crystal has a value which is hidden from you until you click on it. The
+                game is won when you click on crystals whose values add up to the random number.
+                You will lose the game, however, if the values you're selecting exceed the value of the random number.
+            </p>
+            <p>
+                Everytime the game resets upon a win or loss, the values of the crystals change and a new number is
+                generated.
+            </p>
+        </div>
+        <div class="row">
+            <div class="col-md-6 randomNumber">
+                Random number goes here.
+            </div>
+            <div class="col-md-6 winsLosses">
+                wins & Losses go here
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 totalScore">
+                Total Score here
+            </div>
+            <div class="col-md-3 usersNum">
+                Users Value here
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                crystals go here.
+                <div class="row">
+                    <div class="col-md-3">
+                        <div id="crystal1">
+                            <img id="crystals" src="assets/images/blue.jpg" alt="blue gem">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div id="crystal2">
+                            <img id="crystals" src="assets/images/green.png" alt="green gem">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div id="crystal3">
+                            <img id="crystals" src="assets/images/pink.jpg" alt="pink gem">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div id="crystal4">
+                            <img id="crystals" src="assets/images/yellow.jpg" alt="yellow gem">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+
+</html>
