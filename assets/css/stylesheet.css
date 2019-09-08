@@ -27,9 +27,15 @@ h1 {
     /* width: 200px; */ 
 }
 
-#winsLosses {
+#wins {
     display: block;
     background-color: green;
+    height: 100px;
+}
+
+#losses {
+    display: block;
+    background-color: yellow;
     height: 100px;
 }
 
