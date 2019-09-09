@@ -1,18 +1,29 @@
 body {
     background-image: url("../images/background.jpg");
+    font-family: 'Darker Grotesque', sans-serif;
 }
 
-.container {
-    background-color: white;
+p {
+    font-size: 30px;
 }
 
 h1 {
-    text-align: left;
+    text-align: center;
+    background-color: white;
+    border-radius: 4px;
 }
 
-/* .jumbotron {
-    background-color: 
-} */
+h2 {
+    font-size: 40px;
+}
+
+.row {
+    margin: 0px;
+}
+
+.rules {
+    margin-bottom: 8px;
+}
 
 #crystals {
     
@@ -22,31 +33,67 @@ h1 {
 
 #randomNumber {
     display: block;
-    background-color: blue;
-     height: 100px;
-    /* width: 200px; */ 
+    padding: 0px;
+    
+}
+
+#wins, #losses {
+    height: 100%;
 }
 
 #wins {
     display: block;
-    background-color: green;
-    height: 100px;
+    padding: 0px;
+    /* margin-left: 100px; */
 }
 
 #losses {
     display: block;
-    background-color: yellow;
-    height: 100px;
+    padding: 0px;
+    /* margin-left: 100px; */
 }
 
 .usersNum {
     display: block;
-    background-color: orange;
-    height: 100px;
 }
 
 .totalScore {
     display: block;
-    background-color: yellow;
     height: 100px;
+    padding: 0px;
+}
+
+#totalscore {
+    padding: 0px;
+}
+
+.losses-body {
+    text-align: center;
+}
+
+.wins-body {
+    text-align: center;
+}
+
+.totalscore-body {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.targetnumber-body {
+    text-align: center;
+}
+
+.card-header {
+    text-align: center;
+    font-weight: 100;
+    font-size: 30px;
+}
+
+.wins-body, .totalscore-body, .targetnumber-body, .losses-body {
+    font-size: 45px;
+}
+
+.swal-text {
+    font-size: 30px;
 }

@@ -5,12 +5,13 @@
     <!-- meta tag stuff  -->
     <meta charset="UTF-08">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- CSS & Reset -->
-    <link href="assets/css/stylesheet.css" type="text/css" rel="stylesheet">
-    <link href="assets/css/reset.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Darker+Grotesque&display=swap" rel="stylesheet">
     <!-- Bootstrap CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- CSS & Reset -->
+    <link href="assets/css/reset.css" type="text/css" rel="stylesheet">
+    <link href="assets/css/stylesheet.css" type="text/css" rel="stylesheet">
     <!-- Sweet Alert -->
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <!-- Favicon -->
@@ -30,79 +31,104 @@
     </div>
 
     <div class="container">
-        <div class="rules">
-            <p>
-                Here you will be assigned a random number when the game starts.
-            </p>
-            <p>
-                Below are four crystals. Each crystal has a value which is hidden from you until you click on it. The
-                game is won when you click on crystals whose values add up to the random number.
-                You will lose the game, however, if the values you're selecting exceed the value of the random number.
-            </p>
-            <p>
-                Everytime the game resets upon a win or loss, the values of the crystals change and a new number is
-                generated.
-            </p>
-        </div>
-        <div class="row">
-            <div class="col-md-6" id="randomNumber">
-
+        <div class="rules card">
+            <div class="card-header">
+                <h2>The low down in crystal town!</h2>
             </div>
-            <div class="col-md-3" id="wins">
-                Wins:
-            </div>
-            <div class="col-md-3" id="losses">
-                Loss:
+            <div class="card-body">
+                <p>
+                    Here you will be assigned a random number when the game starts.
+                </p>
+                <p>
+                    Below are four crystals. Each crystal has a value which is hidden from you until you click on it.
+                    The
+                    game is won when you click on crystals whose values add up to the random number.
+                    You will lose the game, however, if the values you're selecting exceed the value of the random
+                    number.
+                </p>
+                <p>
+                    Everytime the game resets upon a win or loss, the values of the crystals change and a new number is
+                    generated.
+                </p>
             </div>
         </div>
     </div>
-
     <div class="container">
         <div class="row">
-            <div class="col-md-6 totalScore">
-                
+            <div class="col-md-6 card" id="randomNumber">
+                <div class="card-header">
+                    Target number:
+                </div>
+                <div class="card-body targetnumber-body">
+
+                </div>
             </div>
-            <!-- <div class="col-md-3 usersNum">
-                Users Value here
-            </div> -->
+            <div class="col-md-6 card" id="wins">
+                <div class="card-header">
+                    Wins:
+                </div>
+                <div class="card-body wins-body">
+                    0
+                </div>
+            </div>
+
         </div>
     </div>
 
 
-
     <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                crystals go here.
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="crystal1">
-                            <img id="crystals" src="assets/images/blue.jpg" alt="blue gem">
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="crystal2">
-                            <img id="crystals" src="assets/images/green.png" alt="green gem">
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="crystal3">
-                            <img id="crystals" src="assets/images/pink.jpg" alt="pink gem">
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="crystal4">
-                            <img id="crystals" src="assets/images/yellow.jpg" alt="yellow gem">
-                        </div>
-                    </div>
+        <div class="row" id="totalscore">
+            <div class="col-md-6 totalScore card">
+                <div class="card-header">
+                    Your total score:
+                </div>
+                <div class="card-body totalscore-body">
+
+                </div>
+            </div>
+            <div class="col-md-6 card" id="losses">
+                <div class="card-header">
+                    Loss:
+                </div>
+                <div class="card-body losses-body">
+                    0
                 </div>
             </div>
         </div>
     </div>
-<!-- JQuery CDN -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<!--Javascript game -->
-<script src="assets/javascript/game.js" type="text/javascript"></script>
+
+
+
+    <div class="container">
+        <div class="row">
+            
+                <div class="col-md-3">
+                    <div class="crystal1">
+                        <img id="crystals" src="assets/images/blue.jpg" alt="blue gem">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="crystal2">
+                        <img id="crystals" src="assets/images/green.png" alt="green gem">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="crystal3">
+                        <img id="crystals" src="assets/images/pink.jpg" alt="pink gem">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="crystal4">
+                        <img id="crystals" src="assets/images/yellow.jpg" alt="yellow gem">
+                    </div>
+                </div>
+            
+        </div>
+    </div>
+    <!-- JQuery CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--Javascript game -->
+    <script src="assets/javascript/game.js" type="text/javascript"></script>
 </body>
 
 </html>

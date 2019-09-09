@@ -50,8 +50,8 @@ var gameStart = function() {
     console.log("cryssle 1: " + crystal.one.value + ", Cryssle 2: " + crystal.two.value + ", cryssle 3: " + crystal.three.value + ",  cryssle 4: " + crystal.four.value);
     //set total number to 0 (possible act as a reset?)
     totalNum = 0;
-    $("#randomNumber").text("Target number: " + randNum);
-    $(".totalScore").text("Your total score: " + totalNum);
+    $(".targetnumber-body").text(randNum);
+    $(".totalscore-body").text(totalNum);
 };
 
 // Check if user won or lost and reset game
@@ -59,28 +59,32 @@ var checkWin = function () {
 
     // Check if total number is larger than random number
     if (totalNum > randNum) {
-        alert("Sorry. You lost!");
+        swal("You lost!", {
+            button: false,
+          });
         console.log("You Lost");
 
         // Add to losses
         losses++;
 
         // Change Loss Count 
-        $("#losses").text("Loss: " + losses);
+        $(".losses-body").text(losses);
 
         // Restart the game
         gameStart();
     }
 
     else if (totalNum === randNum) {
-        alert("Congratulations! You Won!");
+        swal("You win!", {
+            button: false,
+          });
         console.log("You Won!");
 
         // Add to wins
         wins++;
 
         // Change Win Count HTML
-        $("#wins").text("Wins: " + wins);
+        $(".wins-body").text(wins);
 
         // Restart the game
         gameStart();
@@ -94,7 +98,7 @@ var values = function (crystalClick) {
     // change totalNum
     totalNum += crystalClick.value;
 
-    $(".totalScore").text("Your total score: " + totalNum);
+    $(".totalscore-body").text(totalNum);
 
     // call the check win 
     checkWin();
